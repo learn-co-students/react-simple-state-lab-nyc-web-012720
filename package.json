@@ -15,7 +15,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.12.0",
     "react-scripts": "1.1.4",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "xo": "^0.28.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +35,18 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^6.2.1",
     "sinon": "^7.5.0"
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ],
+    "prettier": true,
+    "rules": {
+      "radix": 0,
+      "capitalized-comments": 0
+    }
+  },
+  "prettier": {
+    "semi": false
   }
 }
