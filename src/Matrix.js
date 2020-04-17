@@ -1,6 +1,6 @@
   
 import React, { Component } from 'react';
-import Cell from './Cell.js'
+import Cell from './cell.js'
 
 export default class Matrix extends Component {
   
@@ -9,6 +9,7 @@ export default class Matrix extends Component {
   }
   
   genMatrix = () => {
+    // console.log("checking", this.props.values)
     return this.props.values.map(rowVals => <div className="row">{this.genRow(rowVals)}</div>)
   }
   
